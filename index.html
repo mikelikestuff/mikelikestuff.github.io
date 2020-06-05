@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+
+
+.button:active {
+ 
+ border: none;
+  transform: translateY(1px);
+}
+.button {
+  width:50%
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #3369ff; /* blue */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color: #224999}
+
+.button:active {
+  background-color: #3369ff; /* blue */
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+.button0 {width: 15%; }
+.button1 {width: 20%;}
+.button2 {width: 5%; padding: 1% 1%;}
+
+
+.invisible {
+           display : none;
+		   }
+.shown	   {
+           display : inline;
+		   }
+.mystyle{
+  width: 300px;
+  height: 100px;
+  background-color: coral;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+}	
+	   
+</style>
+</head>
+
+
+<body>
+<CENTER> 
+
+<p style = "font-family: Comic Sans MS" 
+   "font-size: 60px" >
+ </p>
+
+
+<div id = "myDIV">
+
+ 
+<img  id = "picture0" src = "https://lh3.googleusercontent.com/wu9zStCA3-LI6N3mskc_-edMfsxk0_VVrmeRDFHXkHcC4Kq1u9fQ6WMH1yn4-NU"  alt = "whoops" onload="setLoadingFlags(0)"/img>	<br>
+<img  id = "picture1" src = "https://lh4.googleusercontent.com/mckQ9lgK9urAK_CFUMElMxD_l-tWHO1YYnjYrpIs4I5LE-Hv0fCGS7PVa4DIHrA"  alt = "whoops" /img>	<br>
+<img  id = "picture2" src = "https://lh5.googleusercontent.com/FoYE-SgfO5MVrwDyaCvx2WibsPWU4PE2arzpI6kyEI9uSwc9Efa9nw7J5cOaulY"  alt = "whoops" /img>	<br>
+<img  id = "picture3" src = "https://lh6.googleusercontent.com/2NgIQzEuf33g4qsXfJPdjzWzH-pTWcUiCx59vSKCVPyOQCYYIYFEPUwCD28RRUQ"  alt = "whoops" /img>	<br>
+<img  id = "picture4" src = "https://lh5.googleusercontent.com/mDXoYKWDhAoYGY8B6Ac1--WubmzRZ1x-_yLUdc2J6ncRWHR6dff9bYIrVx21Y1I"  alt = "whoops" /img>	<br>
+<img  id = "picture5" src = "https://lh3.googleusercontent.com/i1N7BSsUmF8JQsQBO3cKhpc6s1EeiEQr2HDNWsWr3DZ7zEWGOiCEDc3L27te6Dc"  alt = "whoops" /img>	<br>
+<img  id = "picture6" src = "https://lh5.googleusercontent.com/o9kTwPBuGNT7YOBaJ5msMEvbW7Vd5Fj-Qf4xuMV9WFOKKTl_8Gjv-fp6JXC37qE"  alt = "whoops" /img>	<br>
+<img  id = "picture7" src = "https://lh4.googleusercontent.com/D-RM-jQQQ9u8pJP2Dqsf8GygQ9KgI_z74SXUJDmFMhEPRKodaoXnpSr5FY2hW0E"  alt = "whoops" /img>	<br>
+<img  id = "picture8" src = "https://lh4.googleusercontent.com/QSdZ3F491KxwAa4dEIixX_gY_nyG1LFS_1kLA7bKqBaaAeoizsuUrvZhaDilsvk"  alt = "whoops" /img>	<br>
+<img  id = "picture9" src = "https://lh4.googleusercontent.com/iwf6RgO1IJaFKq5MVTKluL7EkdU_diGrRY3hVBcz3EZYEK60WGVCFffV3kp2Vqs"  alt = "whoops" /img>	<br>
+<img  id = "picture10" src = "https://lh4.googleusercontent.com/nOFcEjrEgy8DqPPgb8wQzZN-QWVALMAcb0o-y-PXFj4GMBHi8gA58VWENP-IX1A" alt = "whoops" /img>	<br>
+<img  id = "picture11" src = "https://lh4.googleusercontent.com/j4H1mbI1ouQtQGz77XKgJ44fcuRIfE-7nR_6xHjwccT5tiToEXkFxr7X3W5c0TE" alt = "whoops" /img>	<br>
+Hello
+</div>
+
+<br>
+<audio id="bell">
+
+
+   <source src = "http://www.wavsource.com/snds_2020-03-30_7102365145747638/sfx/bicycle_bell.wav" type = "audio/wav">
+   </audio>
+<audio id="blah">
+   <source src = "http://www.wavsource.com/snds_2020-03-30_7102365145747638/sfx/bad_disk_x.wav" type = "audio/wav">
+   </audio>
+<audio id="fanfare">
+<source src = "http://www.wavsource.com/snds_2020-03-30_7102365145747638/sfx/fanfare_x.wav" type = "audio/wav">
+</audio>
+<audio id="flush">
+<source src = "http://www.wavsource.com/snds_2020-03-30_7102365145747638/sfx/toilet_flushing.wav" type = "audio/wav">
+</audio>
+
+
+
+	
+<canvas id="Hanged_Man"       width="400" hpress="400" style="border:3px solid #222222">  </canvas>   
+<br>
+<br>
+<canvas id="Progress_Display" width="400" hpress="100" style="border:3px solid #222222">  </canvas>   
+                                     
+									 <br>
+
+<button id = "A" onclick="press(value)" class="button button2" value= "A" >A</button>
+<button id = "B" onclick="press(value)" class="button button2" value= "B" >B</button>
+<button id = "C" onclick="press(value)" class="button button2" value= "C" >C</button>
+<button id = "D" onclick="press(value)" class="button button2" value= "D" >D</button>
+<button id = "E" onclick="press(value)" class="button button2" value= "E" >E</button>
+<button id = "F" onclick="press(value)" class="button button2" value= "F" >F</button>
+<button id = "G" onclick="press(value)" class="button button2" value= "G" >G</button>
+<button id = "H" onclick="press(value)" class="button button2" value= "H" >H</button>
+<button id = "I" onclick="press(value)" class="button button2" value= "I" >I</button>
+
+
+<br>
+<br>
+
+<button id = "J" onclick="press(value)" class="button button2" value= "J" >J</button>
+<button id = "K" onclick="press(value)" class="button button2" value= "K" >K</button>
+<button id = "L" onclick="press(value)" class="button button2" value= "L" >L</button>
+<button id = "M" onclick="press(value)" class="button button2" value= "M" >M</button>
+<button id = "N" onclick="press(value)" class="button button2" value= "N" >N</button>
+<button id = "O" onclick="press(value)" class="button button2" value= "O" >O</button>
+<button id = "P" onclick="press(value)" class="button button2" value= "P" >P</button>
+<button id = "Q" onclick="press(value)" class="button button2" value= "Q" >Q</button>
+
+
+<br>
+<br>
+
+<button id = "R" onclick="press(value)" class="button button2" value= "R" >R</button>
+<button id = "S" onclick="press(value)" class="button button2" value= "S" >S</button>
+<button id = "T" onclick="press(value)" class="button button2" value= "T" >T</button>
+<button id = "U" onclick="press(value)" class="button button2" value= "U" >U</button>
+<button id = "V" onclick="press(value)" class="button button2" value= "V" >V</button>
+<button id = "W" onclick="press(value)" class="button button2" value= "W" >W</button>
+<button id = "X" onclick="press(value)" class="button button2" value= "X" >X</button>
+<button id = "Y" onclick="press(value)" class="button button2" value= "Y" >Y</button>
+<button id = "Z" onclick="press(value)" class="button button2" value= "Z" >Z</button>
+<br>
+<br>
+
+<button id = "quit" onclick = "quit(value)" class="button button1" value= "start again" >Start Again</button>
+<br>
+<p id="what_key_was_pressed"></p>
+<br>
+<p id="font_spec"></p>
+<p id="typehere"></p>
+
+
+
+
+
+<script>
+
+
+
+// define a dictionary of words to use
+
+var words = ['ADULT', 'AEROPLANE', 'AIR', 'AIRCRAFT', 'AIRFORCE', 'AIRPORT', 'ALBUM', 'ALPHABET', 'APPLE', 'ARM', 
+'ARMY', 'BABY', 'BABY', 'BACKPACK', 'BALLOON', 'BANANA', 'BANK', 'BARBECUE', 'BATHROOM', 'BATHTUB', 'BED', 'BED', 
+'BEE', 'BIBLE', 'BRIDLE', 'BIRD', 'BOMB', 'BOOK', 'BOSS', 'BOTTLE', 'BOWL', 'BOX', 'BOY', 'BRAIN', 'BRIDGE', 
+'BUTTERFLY', 'BUTTON', 'CAPPUCCINO', 'CAR', 'CARRION', 'CARPET', 'CARROT', 'CAVE', 'CHAIR', 'CHESSBOARD', 'CHIEF',
+ 'CHILD', 'CHISEL', 'CHOCOLATES', 'CLEAR', 'CHURCH', 'CIRCLE', 'CIRCUS', 'CLIPPED', 'CLOCK', 'CLOWN', 'COFFEE', 
+ 'COUGH', 'COMET', 'COMPACT', 'COMPASS', 'COMPUTER', 'CRYSTAL', 'CUP', 'CYCLE', 'DATABASE', 'DESK', 'DIAMOND', 
+ 'DRESS', 'DRILL', 'DRINK', 'DRUM', 'DUNG', 'EARS', 'EARTH', 'EGG', 'ELECTRICITY', 'ELEPHANT', 'ERASER', 
+ 'EXPLOSIVE', 'EYES', 'FAMILY', 'FAN', 'FEATHER', 'FESTIVAL', 'FILM', 'FINGER', 'FIRE', 'FLOODLIGHT', 'FLOWER', 
+ 'FOOT', 'FORK', 'FREEWAY', 'FRUIT', 'FUNGUS', 'GAME', 'GARDEN', 'GAS', 'GATE', 'GEMSTONE', 'GIRL', 'GLOVES', 'GOD',
+ 'GRAPES', 'GUITAR', 'HAMMER', 'HAT', 'HIEROGLYPH', 'HIGHWAY', 'HOROSCOPE', 'HORSE', 'HOSE', 'ICE', 'CREAM', 'INSECT',
+ 'FIGHTER', 'JUNK', 'KALEIDOSCOPE', 'KITCHEN', 'KNIFE', 'LAST', 'LEATHER', 'LEG', 'LIBRARY', 'LIQUID', 'MAGNET', 
+ 'MAN', 'MAP', 'MAZE', 'MEAT', 'METEOR', 'MICROSCOPE', 'MILK', 'MILKSHAKE', 'MIST', 'MONEY', 'MONSTER', 'MOSQUITO', 
+ 'MOUTH', 'NAIL', 'NAVY', 'NECKLACE', 'NEEDLE', 'ONION', 'PAINTBRUSH', 'PANTS', 'PARACHUTE', 'PASSPORT', 'PEBBLE', 
+ 'PENDULUM', 'PEPPER', 'PERFUME', 'PILLOW', 'PLANE', 'PLANET', 'POCKET', 'POST', 'POTATO', 'PRINTER', 'PRISON', 
+ 'PYRAMID', 'RADAR', 'RAINBOW', 'RECORD', 'RESTAURANT', 'RIFLE', 'RING', 'ROBOT', 'ROCK', 'ROCKET', 'ROOF', 'ROOM', 
+ 'ROPE', 'SADDLE', 'SALT', 'SANDPAPER', 'SANDWICH', 'SATELLITE', 'SCHOOL', 'SEX', 'SHIP', 'SHOES', 'SHOP', 'SHOWER', 
+ 'SIGNATURE', 'SKELETON', 'SLAVE', 'SNAIL', 'SOFTWARE', 'SOLID', 'SPACE', 'SPECTRUM', 'SPHERE', 'SPICE', 'SPIRAL',
+ 'SPOON', 'SPORTS', 'SPOTLIGHT', 'SQUARE', 'STAIRCASE', 'STAR', 'STOMACH', 'SUN', 'SUNGLASSES', 'SURVEYOR', 'SWIMMING',
+ 'SWORD', 'TABLE', 'TAPESTRY', 'TEETH', 'TELESCOPE', 'TELEVISION', 'TENNIS', 'THERMOMETER', 'TIGER', 'TOILET', 'TONGUE',
+ 'TORCH', 'TORPEDO', 'TRAIN', 'TREADMILL', 'TRIANGLE', 'TUNNEL', 'TYPEWRITER', 'UMBRELLA', 'VACUUM', 'VAMPIRE', 'VIDEOTAPE',
+ 'VULTURE', 'WATER', 'WEAPON', 'WEB', 'WHEELCHAIR', 'WINDOW', 'WOMAN', 'WORM', 'XYLOPHONE'];
+
+//some global variables
+var score = 0;           // a score used to track how many wrong letters attempted
+var wordlength;      //the length of the mystery word
+var word;            //the actual mystery word
+var progress;        //what we know so far of the mystery word. starts out as _ _ _ _ and ends up as w o r d
+          
+var canvas0 = document.getElementById('Hanged_Man');      //a canvas where the hanged man will be drawn - (Hanged_Man)
+var btx = canvas0.getContext("2d");                       //for the Hanged_Man
+var canvas = document.getElementById('Progress_Display'); //a canvas where the mystery word will be displayed - (Progress_Display)
+var ctx = canvas.getContext("2d");	                      //for the Progress_Display  
+var document;  
+var whichpicture = "picture0";
+var img;
+var Win_Lose_message = " "
+var win = "false";
+var lose = "false";
+var end_flag = "false"
+var noise
+
+
+
+//make the images invisible in the HTML (They only show in the canvas when required)
+document.getElementById("myDIV").className = "invisible";
+
+// select a random word from the dictionary
+    word = words[Math.floor(Math.random()* words.length)];
+
+//create the dashes on which to guess letters
+    wordlength = word.length;
+    progress = "";
+	for (n = 1; n <= wordlength; n++)
+		{ progress = progress + "_";
+		}
+
+
+//write the word on the screen during test
+ //   document.getElementById("font_spec").innerHTML = word;
+   
+
+//make canvases
+   update_canvases();   
+ 
+//this is a terrible kluge - i keep updating the canvas as can't work out how to properly await the images to load 
+    intervalID = window.setInterval(update_canvases,500,1);
+
+//listen for window being resized & re-initialises canvas and font size if it happens
+    window.addEventListener("resize", update_canvases);
+   
+
+           
+//################################################################################################
+
+
+function update_canvases() 
+{
+	  
+     
+// initialise the progress canvas
+      canvas.width = window.innerWidth/1.5;
+      if (canvas.width > 800) { canvas.width = 600;}
+      if (canvas.width < 300) { canvas.width = 300;}
+      canvas.height =canvas.width/10;
+      w = canvas.width;
+      h = canvas.height;
+      ctx.beginPath();
+      ctx.rect (0,0,w,h);
+      ctx.fillStyle = '#987600';
+      ctx.fill();
+       
+// alter the font size for the progress canvas 
+      fontsize = parseInt(canvas.height/1.5);
+      ctx_font_specification = fontsize + "px Comic Sans MS";
+      ctx.font = fontsize + "px Comic Sans MS";
+	  ctx.textAlign = "center";
+      ctx.fillStyle = 'red';
+	 
+// write the word progress so far in the progress canvas	 
+	 var Word_display = "";
+	  for (n = 0 ; n < wordlength; n++){
+	  Word_display = Word_display + progress.charAt(n) + " ";
+	  }
+	  ctx.fillText(Word_display,canvas.width/2,canvas.height * 0.8);
+	  
+	  
+// initialise the  Hanged Man canvas
+
+      canvas0.width = window.innerWidth/1.5;
+      if (canvas0.width > 800) { canvas0.width = 600;}
+      if (canvas0.width < 300) { canvas0.width = 300;}
+      canvas0.height =canvas0.width *1/2;
+      w = canvas0.width;
+      h = canvas0.height;
+      btx.beginPath();
+      btx.rect (0,0,w,h);
+      btx.fillStyle = '#3333ff';
+      btx.fill();	  
+// draw the jpg of the hanged man
+
+      whichpicture = "picture" + score;
+      img = document.getElementById(whichpicture);
+	  
+// display the overlay message on teh hanged man	
+	  fontsize0 = parseInt(canvas0.height/4);
+       btx.font = fontsize0 +"px Comic Sans MS";
+	  btx.textAlign = "center";
+      btx.fillStyle = 'red';
+	  btx.drawImage(img, 0, 0 , canvas0.width, canvas0.height);	
+	    
+	  btx.fillText(Win_Lose_message,canvas0.width/2,canvas0.height * 0.2);
+	  
+	 
+	  
+}
+//####################################################################################################################
+// service the button presses
+  function press(value) {
+     
+    document.getElementById(value).disabled = true;
+	document.getElementById(value).style.backgroundColor = "grey"; 
+	
+	
+	 valid_letter = false;
+	 noise = document.getElementById("blah"); //set the audio file as the sad fail sound
+	 var wordarray = word.split("");          //convert the unknown word into an array of individual characters
+	 var progressarray = progress.split("");  //convert the progress string into an array also 
+	 for (n = 0; n < wordlength; n++)         //for each letter of the word
+	 {
+	 
+		if (value == wordarray[n])            //IF the letter pressed on the keypad is one of the letters in the word
+			{ 
+			progressarray[n] = value;         //then change the "_" in the progress array to the typed letter
+            valid_letter = true;			  //record the fact that it was a correct letter
+			
+			 noise = document.getElementById("bell"); //set a happy bell to indicate success
+            
+			}
+			progress = "";                    //destroy the contents of the progress string
+		 //	noise.play(); 							
+		for  (m = 0; m < wordlength; m++)
+		    {
+		      progress = progress + progressarray[m];   //and repopulate the progress string with the contents of the progress array
+		    }
+		
+     }  // end of for n loop
+		if (valid_letter == false)
+        { if (Win_Lose_message ==" ") {score = score + 1;}
+        	}		
+
+	// Have we won the game
+     win = "true";
+	
+    progressarray = progress.split("");
+	 for (h = 0; h < wordlength; h++)	 {   if (progressarray[h] == "_") 
+											                   {
+											 win = "false";
+											                   } 
+										 }
+	 
+	if (win == "true") 
+	     {if (end_flag == "false") {
+		    Win_Lose_message = "You Win!";
+		 	wintune = document.getElementById("fanfare"); //set the audio file as the game win sound
+	        wintune.play();
+	        end_flag = "true";
+		 		                  }
+	     }
+	
+	// Have we lost the game?
+	if (score == 11) 
+	{	if(end_flag == "false") {
+	lose = "true";
+	complete = "true";
+	Win_Lose_message = "You Lose!!";
+	progress = word;
+	failtune = document.getElementById("flush"); //set the audio file as the game fail sound
+	failtune.play();
+	end_flag = "true";
+                              }
+	}
+	
+	
+	if (Win_Lose_message== " ") {noise.play();} 
+	
+	
+	
+	update_canvases();		                  //update the display	 
+	
+                       }   //end of button press function
+					   
+					   
+//#########################################################################################################################
+  function quit()    {        //function called by the "start again button"
+ location.reload (); }
+//var x = document.getElementById("bell"); 
+
+ 
+//  x.play(); 
+ 
+//--------------------------------------------------------------------------------------------------- 
+
+
+</script>
+
+
+</body>
+</html>
+  
